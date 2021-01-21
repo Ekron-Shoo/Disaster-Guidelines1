@@ -324,6 +324,12 @@ section h3 {
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  }
 
+.innerWrapper {
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+
 nav {
 	padding: 0;
 	margin: 0;
@@ -340,24 +346,29 @@ header nav ul {
 	padding: 0;
 	margin: 0;
 	width: 100%;
+	border-right: 20px solid rgb(0,0,0);
 }
 
 header nav ul li {
+	float: left;
 	margin: 0;
 	display: inline;
+	width: 25%;
 	text-align: center;
-	transform: scale(0.5);
+	transform: scale(0.8);
 
 	background: rgba(0,0,0);
 }
 
 header nav ul li:hover {
 	background: rgba(0,0,0);
-  transform: scale(0.5);
+  font-style: bold;
+  transform: scale(0.9);
 }
 
 header nav ul li a {
 	text-decoration: none;
+	padding: 10px 5px;
 	color: #fff;
 	margin: 0;
 	display: inline-block;
@@ -396,6 +407,7 @@ header {
   }
   
   header nav ul li a {
+    padding: 25px 2%;
   }
 }
 
